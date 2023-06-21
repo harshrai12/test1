@@ -1,0 +1,111 @@
+
+*{
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+ .screen{
+    display: flex;
+    height:  4000px;
+ }
+ 
+
+
+ .text_info {
+    color: aliceblue;
+    margin-top: 500px;
+    margin-left:20px;
+    margin-right: 10px;
+  }
+.click_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+ .rightside{
+    position: fixed;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(226, 205, 239);
+    transition: background-color 0.5s ease; 
+ }
+
+ .rightside.grey {
+   background-color: rgb(195, 195, 195);
+}
+
+
+ .leftside{
+    position: fixed;
+    background-color: rgb(92, 19, 164);
+    width: 40%;
+    height: 100%;
+    transition: background-color 0.5s ease;
+ }
+ .leftside.blue {
+   background-color: rgb(0, 0, 141);
+}
+
+ .nexgtv{
+   margin-top: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.nexgtv>img{
+   width: 300px;
+}
+.vemeimg{
+   display: flex;
+}
+
+
+
+.img1{
+   margin-top: -50px;
+   width: 250px;
+   position: relative;
+   top:180px;
+   left:230px;
+   
+}
+.img2{
+   position: relative;
+   top:-1300px;
+   width: 250px;
+   left: 250px;
+   
+}
+.mobilescreen{
+display: none;
+}
+
+@media (max-width: 850px) {
+   /* Styles for screen widths up to 768px */
+   .screen{
+      display: none;
+   }
+   .mobilescreen{
+      display: block;
+      }
+
+.slide{
+   display: flex;
+   flex-direction: column;
+}
+
+
+.top{
+   background-color: violet;
+   height: 600px;
+}
+.bottom{
+   background-color: aquamarine;
+   height:600px;
+}
+
+
+
+}
